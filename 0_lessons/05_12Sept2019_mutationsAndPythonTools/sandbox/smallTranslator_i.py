@@ -15,7 +15,7 @@ sequence = Seq(dna_str)
 # give me RNA from the DNA
 RNAfromDNA_str = Seq.transcribe(sequence) #transcription step: converting dna to rna
 # give me DNA from the RNA
-DNAfromRNA_str = Seq.back_transcribe(sequence)
+DNAfromRNA_str = Seq.back_transcribe(RNAfromDNA_str)
 # give me the protein from the dna
 PROTfromRNA_str = Seq.translate(RNAfromDNA_str)
 
